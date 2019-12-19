@@ -61,6 +61,10 @@ class Syrup(Decorator):
     def cost(self) -> float:
         return 30 + super().component.cost()
 
+    @staticmethod
+    def sweet() -> str:
+        return 'Mmmm, sweet!'
+
 
 class WhippedCream(Decorator):
     def __init__(self, component: Beverage) -> None:
@@ -123,6 +127,7 @@ if __name__ == "__main__":
             beverage = Milk(beverage)
         elif add == "4":
             beverage = Syrup(beverage)
+            print(beverage.sweet())
 
     print('Thank you for choosing us! \n Your order is:', beverage.get_description(),
           '\n Your total is:', beverage.cost(), 'rubles.')
