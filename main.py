@@ -101,7 +101,7 @@ class Sugar(Decorator):
 
 if __name__ == "__main__":
     stop_coffee = False
-    print('Welcome to our cozy cafe Decoracofe!')
+    print('Welcome to our cozy cafe Decoracafe!')
     print('Your hosts are Ivana Begovic and Svetlana Ruchkina.')
     print('Please, chose your beverage.')
     bev_type = input('Espresso(1) or Black tea(2)?')
